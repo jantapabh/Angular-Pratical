@@ -8,10 +8,13 @@ import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
-    AppComponent, HeroesComponent,
+
+    AppComponent, 
+    HeroesComponent,
     
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
+    
     BrowserModule,
     AppRoutingModule,
     FormsModule

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
 
+  hero = 'Winstorm';
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void { //ดึงข้อลจาก api ใช้ตรงนี้
   }
 
 }
+
+//oninit ดึงมาก่อนทุกครั้งและต้องทำการ import 
