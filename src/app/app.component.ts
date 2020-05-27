@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html', //บอกว่าไฟล์ app ที่ต้องการใช้อยู่ที่ไหน
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'angular-heroes';
+export class AppComponent { //เป็นคลาสที่ถูกมองว่าเป็น attribute
+  title = 'Tour of Heroes'; //ประกาศตัวแปรตรงๆ ได้เลย
 }

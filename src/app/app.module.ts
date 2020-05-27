@@ -17,5 +17,6 @@ import { HeroesComponent } from './heroes/heroes.component';
   ],
   providers: [],
   bootstrap: [AppComponent] //เป็นการกำหนดจุดเริ่มต้นของ app
+  
 })
 export class AppModule { }
