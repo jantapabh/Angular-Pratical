@@ -6,13 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 //import component
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 
 @NgModule({
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
 
     AppComponent, 
-    HeroesComponent,
+    HeroesComponent, HeroDetailComponent,
     
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
