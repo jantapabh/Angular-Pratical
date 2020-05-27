@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
     AppComponent,
     HeroesComponent
   ],
@@ -16,6 +16,6 @@ import { HeroesComponent } from './heroes/heroes.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //เป็นการกำหนดจุดเริ่มต้นของ app
 })
 export class AppModule { }
