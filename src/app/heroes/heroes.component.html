@@ -1,6 +1,6 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
-  <li>
+    <li *ngFor="let hero of heroes">
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
@@ -14,4 +14,6 @@
     </label>
   </div>
 
-  <!-- Two way binding เป็นการผูกตัวแปรกับ input -->
+<!-- Two way binding เป็นการผูกตัวแปรกับ input -->
+<!-- *ngFor เป็นการแสดงแบบวนลูปแสดงค่าข้อมูล -->
+<!-- ng แบบมี * ข้างหน้ากับไม่มีต่างกัน แบบมี * จะเป็นการวนลูปแสดงค่าแต่ไม่มีเป็นการทำ binding -->
