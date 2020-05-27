@@ -24,6 +24,7 @@ export class HeroesComponent implements OnInit {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.messageService.add(`HeroService: Selected hero id=${hero.id}`);
+    //เรียกให้แสดง message ที่เลือกแต่ละครั้ง
   }
 
   getHeroes(): void {

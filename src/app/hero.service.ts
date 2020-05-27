@@ -11,6 +11,8 @@ import { MessageService } from './message.service';
 })
 export class HeroService {
 
+
+  //ทำการ inject message service เพื่อใช้งาน จะดึง add กับ clear มาเพื่อให้ทำงานได้
   constructor(private messageService: MessageService) { }
 
   getHeroes(): Observable<Hero[]> {
