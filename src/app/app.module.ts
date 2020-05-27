@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+
 @NgModule({
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
-    AppComponent,
-    HeroesComponent
+    AppComponent, HeroesComponent,
+    
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
     BrowserModule,
