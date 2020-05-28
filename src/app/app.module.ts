@@ -15,7 +15,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
 
     AppComponent, 
-    HeroesComponent, HeroDetailComponent, MessagesComponent, DashboardComponent,
+    HeroesComponent, 
+    HeroDetailComponent,
+    MessagesComponent, 
+    DashboardComponent,
     
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
