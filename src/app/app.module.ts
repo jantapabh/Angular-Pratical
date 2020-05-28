@@ -16,6 +16,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //import Web API
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
@@ -24,7 +25,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
     HeroesComponent, 
     HeroDetailComponent,
     MessagesComponent, 
-    DashboardComponent,
+    DashboardComponent, HeroSearchComponent,
     
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
