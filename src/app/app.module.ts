@@ -8,13 +8,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [ //เป็นการบอกว่ามี components อะไรบ้าง
 
     AppComponent, 
-    HeroesComponent, HeroDetailComponent, MessagesComponent,
+    HeroesComponent, HeroDetailComponent, MessagesComponent, DashboardComponent,
     
   ],
   imports: [ //เป็นการดึงโมดูลมาใช้
