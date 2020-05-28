@@ -21,9 +21,9 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 
 //ทำการ import RouterModule และ Routes และต่อไปให้ทำการ import HeroesComponent เพื่อทำาการ router ได้ 
 const routes: Routes = [
-  { path: 'detail/:id', component: HeroDetailComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes', component: HeroesComponent }
 ]; // ส่วนกำหนด path ของไฟล์โดย path คือส่วนที่เป็น url และ component คือส่วนที่จะไป
 
