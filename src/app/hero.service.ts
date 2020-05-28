@@ -15,6 +15,10 @@ export class HeroService {
 
   private heroesUrl = 'api/heroes';  // URL to web api
 
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
   //ทำการ inject message service เพื่อใช้งาน จะดึง add กับ clear มาเพื่อให้ทำงานได้
   constructor(private http: HttpClient, private messageService: MessageService) { }
 
@@ -34,23 +38,33 @@ export class HeroService {
     );
   }
 
+  //ส่วนการ update ข้อมูล
+
+  updateHero(hero: Hero): Observable<any> {
+    return this.http.put(this.heroesUrl, hero, this.httpOptions).pipe(
+      tap(_ => this.log(`updated hero id=${hero.id}`)),
+      catchError(this.handleError<any>('updateHero'))
+    );
+  }
+
   private log(message: string) {
     this.messageService.add(`HeroService: ${message}`);
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-  
+
       // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
-  
+
       // TODO: better job of transforming error for user consumption
       this.log(`${operation} failed: ${error.message}`);
-  
+
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
   }
+
 
 }
 
