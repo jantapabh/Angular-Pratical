@@ -16,6 +16,7 @@
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
+       <!-- กำหนด router แต่ละตัวเมื่อคลิกจะไปยังส่วนแสดงผลตัวนั้นๆ -->
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
     <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
