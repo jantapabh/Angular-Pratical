@@ -109,3 +109,4 @@ export class HeroService {
 
 // injectable เป็นการบอกว่าอะไรเป็น service บ้าง inject คือเราสามารถนำไปใส่ในคลาสอื้่นได้
 //สร้าง service เพื่อเรียกใช้งาน ซึ่ง component ไว้สำหรับแสดงข้อมูลเท่านั้น เปรียบเสมือน controller
+// .pipe เป็นการส่งต่่อข้อมูล
