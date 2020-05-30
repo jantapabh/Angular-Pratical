@@ -23,7 +23,7 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'detail/:id', component: HeroDetailComponent }, //:id บอกว่าสามารถกำหนดเป็นอะไรก็ได้
   { path: 'heroes', component: HeroesComponent }
 ]; // ส่วนกำหนด path ของไฟล์โดย path คือส่วนที่เป็น url และ component คือส่วนที่จะไป
 
