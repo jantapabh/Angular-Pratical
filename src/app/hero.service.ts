@@ -8,6 +8,8 @@ import { MessageService } from './message.service';
 //import http
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
+
+//ส่วน srevice 0ะเป็นการทำงานกับ heroes เช่น เพิ่ม ลบ แก้ไข data
 @Injectable({
   providedIn: 'root'
 })
