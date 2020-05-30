@@ -14,6 +14,7 @@ import { HeroService }  from '../hero.service';
 export class HeroDetailComponent implements OnInit {
 
   @Input() hero: Hero;  //ทำให้ hero เป็นตัวแปรประเภท input
+  // hero คือชื่อตัวแปร และ Hero คือระเภทตัวแปร
 
   constructor(
     private route: ActivatedRoute,
