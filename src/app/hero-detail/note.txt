@@ -1,7 +1,9 @@
 4.Module app Routing
 
-- กำหนด router ใน aapp-Routing-module.ts เพิ่มส่วน routing ใน import และ ngModule
--  
+- กำหนด router ใน app-Routing-module.ts เพิ่มส่วน routing ใน import และ ngModule
+- กำหนด path และ component สำหรับ render ใน app-Routing-module.ts
+- เพิ่มส่วน <router-outlet> ใน app-commponent.html
+- 
 
 
 
