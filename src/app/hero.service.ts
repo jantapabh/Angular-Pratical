@@ -20,6 +20,7 @@ export class HeroService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
+  
 
   //ทำการ inject message service เพื่อใช้งาน จะดึง add กับ clear มาเพื่อให้ทำงานได้
   constructor(private http: HttpClient, private messageService: MessageService) { }
