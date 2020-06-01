@@ -1,7 +1,12 @@
+// ถ้า component อื่นต้องการเรียกใช้ service จะต้องใช้วิธีการ dependecise injection โดยเรียกผ่าน constructor
+โดย app จะสร้าง serice ใน root แล้วจากนั้น componen อื่นจะเรียกใช้ได้ทำให้ไม่เปลืองเวลาเขียนโค้ด
+
+// interface ควรประกาศแยกแต่ละไฟล์เพราะเราต้องเรียกใช้หลายที่ทำให้ไม่ต้องสร้างซ้ำๆ
+
 4.Module app Routing
 
 - กำหนด router ใน app-Routing-module.ts เพิ่มส่วน routing ใน import และ ngModule
-- กำหนด path และ component สำหรับ render ใน app-Routing-module.ts
+- กำหนด path และ component สำหรับ render ใน app-Routing-module.tsๆฟไ
 - เพิ่มส่วน <router-outlet> ใน app-commponent.html
 
 5. get Data from server การดึงข้อมูลจาก server โดยใข้ http request
