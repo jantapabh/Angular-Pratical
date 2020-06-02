@@ -18,9 +18,8 @@ const routes: Routes = [
 ]; // ส่วนกำหนด path ของไฟล์โดย path คือส่วนที่เป็น url และ component คือส่วนที่จะไป
 
 @NgModule({
-
   imports: [RouterModule.forRoot(routes)], //forRoot เป็นการบอกว่าเป็นฟังก์ชั่นที่อยู่นอกสุด
   exports: [RouterModule]
-  
+
 })
 export class AppRoutingModule { }
