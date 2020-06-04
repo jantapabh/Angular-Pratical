@@ -10,7 +10,6 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 
 //ทำการ import RouterModule และ Routes และต่อไปให้ทำการ import HeroesComponent เพื่อทำาการ router ได้ 
-
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
