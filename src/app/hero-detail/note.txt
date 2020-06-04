@@ -9,6 +9,7 @@
 - กำหนด path และ component สำหรับ render ใน app-Routing-module.tsๆฟไ
 - เพิ่มส่วน <router-outlet> ใน app-commponent.html
 
+
 5. get Data from server การดึงข้อมูลจาก server โดยใข้ http request
 - การ ลบ อัพเดพ เพิ่ม ข้อมูล ทำผ่าน http แทนการทำผ่าน moack.ts
 
