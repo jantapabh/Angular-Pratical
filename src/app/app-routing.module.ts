@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent }, //:id บอกว่าสามารถกำหนดเป็นอะไรก็ได้
   { path: 'heroes', component: HeroesComponent }
-]; // ส่วนกำหนด path ของไฟล์โดย path คือส่วนที่เป็น url และ component คือส่วนที่จะไป
+];
+ // ส่วนกำหนด path ของไฟล์โดย path คือส่วนที่เป็น url และ component คือส่วนที่จะไป
 @NgModule({
   imports: [RouterModule.forRoot(routes)], //forRoot เป็นการบอกว่าเป็นฟังก์ชั่นที่อยู่นอกสุด
   exports: [RouterModule]
