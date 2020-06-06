@@ -22,4 +22,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)], //forRoot เป็นการบอกว่าเป็นฟังก์ชั่นที่อยู่นอกสุด
   exports: [RouterModule]
 })
+
+
 export class AppRoutingModule { }
