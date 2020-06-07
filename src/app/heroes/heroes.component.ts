@@ -20,7 +20,6 @@ export class HeroesComponent implements OnInit {
     .subscribe(heroes => this.heroes = heroes);
   }
  
-
   //ส่วนเพิ่ม hero
   add(name: string): void {
     name = name.trim();
